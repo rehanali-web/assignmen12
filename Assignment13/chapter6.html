@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+  <script>
+
+    document.write("<h1>Question 3 </h1>")
+
+
+    var name = prompt("Enter your name:", "Guest");
+    document.write("<h2>Hello, " + name + "! Welcome to our website.</h2>")
+
+
+    document.write("<h1>Question 1 </h1>")
+    document.write("<h2>Result:</h2>")
+    var a = 10;
+    document.write("The value of a is: " + a + "<br><br>");
+    document.write("..........................................<br><br>");
+    document.write("The value of ++a is: " + (++a) + "<br>");
+    document.write("Now the value of a is: " + a + "<br><br>");
+    document.write("The value of a++ is: " + (a++) + "<br>");
+    document.write("Now the value of a is: " + a + "<br><br>");
+    document.write("The value of --a is: " + (--a) + "<br>");
+    document.write("Now the value of a is: " + a + "<br><br>");
+    document.write("The value of a-- is: " + (a--) + "<br>");
+    document.write("Now the value of a is: " + a + "<br><br>");
+
+
+document.write("<h1>Question 2 </h1><br>")
+
+
+
+    var a = 2, b = 1;
+    var result = --a - --b + ++b + b--;
+    document.write("a is = " + a + "<br> b is = " + b + "<br> result is = " + result);
+
+
+document.write("<h1>Question 4 </h1>")
+
+
+var num = prompt("Enter a number:", "5");
+    document.write("<h3>Multiplication Table of " + num + ":</h3>");
+    document.write(num + " x 1 = " + (num * 1) + "<br>");
+    document.write(num + " x 2 = " + (num * 2) + "<br>");
+    document.write(num + " x 3 = " + (num * 3) + "<br>");
+    document.write(num + " x 4 = " + (num * 4) + "<br>");
+    document.write(num + " x 5 = " + (num * 5) + "<br>");
+    document.write(num + " x 6 = " + (num * 6) + "<br>");
+    document.write(num + " x 7 = " + (num * 7) + "<br>");
+    document.write(num + " x 8 = " + (num * 8) + "<br>");
+    document.write(num + " x 9 = " + (num * 9) + "<br>");
+    document.write(num + " x 10 = " + (num * 10) + "<br>");
+
+
+document.write("<h1>Question 5 </h1>")
+
+
+
+    var subject1 = prompt("Enter the name of first subject", "Math");
+    var subject2 = prompt("Enter the name of second subject", "Science");
+    var subject3 = prompt("Enter the name of third subject", "English");
+    var totalMarksPerSubject = 100;
+    var obtained1 = +prompt("Enter obtained marks for " + subject1 + ":", "0");
+    var obtained2 = +prompt("Enter obtained marks for " + subject2 + ":", "0");
+    var obtained3 = +prompt("Enter obtained marks for " + subject3 + ":", "0");
+    var totalObtained = obtained1 + obtained2 + obtained3;
+    var totalMarks = totalMarksPerSubject * 3;
+    var percentage = (totalObtained / totalMarks) * 100;
+
+    document.write("<h2>Marks Sheet</h2>");
+    document.write("<table border='1' cellspacing='0' cellpadding='5'>");
+    document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
+    document.write("<tr><td>" + subject1 + "</td><td>" + totalMarksPerSubject + "</td><td>" + obtained1 + "</td></tr>");
+    document.write("<tr><td>" + subject2 + "</td><td>" + totalMarksPerSubject + "</td><td>" + obtained2 + "</td></tr>");
+    document.write("<tr><td>" + subject3 + "</td><td>" + totalMarksPerSubject + "</td><td>" + obtained3 + "</td></tr>");
+    document.write("<tr><th>Total</th><th>" + totalMarks + "</th><th>" + totalObtained + "</th></tr>");
+    document.write("<tr><th colspan='2'>Percentage</th><th>" + percentage + "%</th></tr>");
+    document.write("</table>");
+
+  </script>
+</html>
