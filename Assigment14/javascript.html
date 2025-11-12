@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Third Assignment</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    
+                        // Question 1
+
+var city =prompt('Enter Your City Name:')
+if(city === 'karachi')(
+    alert('Welcome to city of lights')
+)
+else{
+    alert('Invalid city name')
+}
+    
+                        // Question 2
+
+var gender = prompt('Enter your gender')
+if(gender === 'male'){
+    alert('Good Morning Sir.')
+}
+else if(gender === 'female'){
+    alert('Good Morning Ma’am.')
+}
+else{
+    alert('Invalid gender')
+}
+
+                        // Question 3
+
+var color = prompt('Enter color of road traffic signal')               
+if(color === 'red'){
+  alert('Must Stop')
+}
+else if(color === 'yellow'){
+  alert('Ready to move')
+}
+else if(color === 'green'){
+  alert('move now')
+}
+else{
+  alert('Invalid color')
+}
+
+                    //    Question 4
+
+var fuel = +prompt('Enter the remaining fuel in your car (in litres):')
+if(fuel < 0.25){
+  alert('Please refill the fuel in your car')
+}
+else{
+  alert('You have enough fuel.')
+}     
+
+                    //    Question 5 "A"
+
+var a = 4;
+if (++a === 5){
+    alert("given condition for variable a is true");
+}
+
+                        // Question 5 "B"
+
+var b = 82;
+if (b++ === 83){
+    alert("given condition for variable b is true");
+}
+
+                    //    Question 5 "C"
+
+var c = 12;
+if (c++ === 13){
+    alert("condition 1 is true");
+}
+if (c === 13){
+    alert("condition 2 is true");
+}
+if (++c < 14){
+    alert("condition 3 is true");
+}
+if (c === 14){
+    alert("condition 4 is true");
+}
+
+                        // Question 5 "D"
+
+var materialCost = 20000
+var laborCost = 2000
+var totalCost = materialCost + laborCost
+if (totalCost === laborCost + materialCost){
+    alert('The cost equals');
+}
+
+                        // Question 5 "E"
+
+if (true){
+    alert("True");
+}
+if (false){
+    alert("False");
+}
+
+                        // Question 5 "F"
+
+if("car" < "cat"){
+    alert("car is smaller than cat");
+}
+
+                        // Question 6
+
+var sub1 =+prompt('Enter marks obtained in English')
+var sub2 =+prompt('Enter marks obtained in urdu')
+var sub3 =+prompt('Enter marks obtained in math')
+
+var totalMarks = 300
+var obtainedMarks = sub1 + sub2 + sub3
+var percentage = (obtainedMarks / totalMarks)*100
+var grade ;
+var remarks ;
+
+if(percentage >= 80){
+    grade = 'A-one'
+    remarks = 'Excellent'
+}
+else if(percentage >= 70){
+    grade = 'A'
+    remarks = 'Good'
+}
+else if(percentage >= 60){
+    grade = 'B'
+    remarks = 'You need to improve'
+}
+else{
+    grade = 'fail'
+    remarks = 'Don’t give up! Work hard and you’ll succeed next time'
+}
+document.write('<h1>Marks Sheet</h1>')
+document.write('total Marks: ' + totalMarks + '<br>' )
+document.write('Marks Obtained: ' + obtainedMarks + '<br>')
+document.write('Percentage: ' + percentage.toFixed(2) + '%<br>')
+document.write('Grade: ' + grade + '<br>')
+document.write('Remarks: ' + remarks)
+
+                    //    Question 7
+
+var secretNumber = 7;
+var user = +prompt('Guess the secret number (1 to 10):');
+if (user === secretNumber) {
+    alert('Bingo! Correct answer.');
+} 
+else if (user + 6 === secretNumber || user - 1 === secretNumber) {
+    alert('Close enough to the correct answer.');
+} 
+else {
+    alert('Try again!');
+}
+
+                        // Question 8   
+                       
+var num = +prompt('Enter a number')
+if (num % 3 === 0){
+    alert('The number is divisible by 3.')
+}
+else{
+    alert('The number is not divisible by 3.')
+}
+
+                        // Question 9
+
+var num = +prompt('Enter a number to check whether it is even or odd:');
+if (num % 2 === 0) {
+    alert('This number is even');
+} 
+else {
+    alert('This number is odd');
+}
+
+                        // Question 10
+
+var temperature = +prompt('Enter the temperature in °C:');
+if(temperature > 40){
+    alert('It is too hot outside')
+}
+else if(temperature > 30){
+    alert('The weather is today is normal')
+}
+else if(temperature > 20){
+    alert('today weather is cool')
+}
+else if(temperature > 10){
+    alert('OMG! Today weather is so Cool.')
+}
+else{
+    alert("It's very cold outside!")
+}
+
+                        // Question 11
+
+var num1 = +prompt("Enter the first number");
+var num2 = +prompt("Enter the second number");
+var operation = prompt("Enter operation (+, -, *, /, %)"); // No '+' here
+
+if (operation === "+") {
+    alert("Result: " + (num1 + num2));
+}
+else if (operation === "-") {
+    alert("Result: " + (num1 - num2));
+}
+else if (operation === "*") {
+    alert("Result: " + (num1 * num2));
+}
+else if (operation === "/") {
+    alert("Result: " + (num1 / num2));
+}
+else if (operation === "%") {
+    alert("Result: " + (num1 % num2));
+}
+else {
+    alert("Invalid operation! Please enter +, -, *, / or %");
+}
+
+</script>
+</html>
