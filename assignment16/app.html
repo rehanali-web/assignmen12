@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 16</title>
+</head>
+<body>
+    
+</body>
+<script>
+                          // Question 1
+
+var arr = [[], [], []];
+
+                          // Question 2
+
+var matrix = [[0, 1, 2, 3],[1, 0, 1, 2],[2, 1, 0, 1]];
+
+                          // Question 3
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+                          // Question 4
+
+let number = +prompt("Enter a number for multiplication table:");
+let length = +prompt("Enter the length of the table:");
+if(!isNaN(number) && !isNaN(length)) {
+    for (let i = 1; i <= length; i++) {
+    console.log(number + " x " + i + " = " + (number * i));
+    }
+}
+
+                          // Question 5
+
+let fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+for (let i = 0; i < fruits.length; i++) {
+console.log(fruits[i]);
+}
+for (let i = 0; i < fruits.length; i++) {
+console.log("Element at index " + i + " is " + fruits[i]);
+}
+
+                          // Question 6
+
+document.write("Counting:<br><br>");
+for (let i = 1; i <= 15; i++) {
+ document.write(i + (i < 15 ? ", " : ""));
+}
+
+document.write("<br><br>Reverse counting:<br><br>");
+for (let i = 10; i >= 1; i--) {
+ document.write(i + (i > 1 ? ", " : ""));
+}
+
+document.write("<br><br>Even:<br><br>");
+for (let i = 0; i <= 20; i += 2) {
+document.write(i + (i < 20 ? ", " : ""));
+}
+
+document.write("<br><br>Odd:<br><br>");
+for (let i = 1; i <= 19; i += 2) {
+ document.write(i + (i < 19 ? ", " : ""));
+}
+
+document.write("<br><br>Series:<br><br>");
+for (let i = 2; i <= 20; i += 2) {
+document.write(i + "k" + (i < 20 ? ", " : ""));
+}
+
+                          // Question 7
+
+let search = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
+let found = false;
+if(search) {
+ for (let i = 0; i < fruits.length; i++) {
+if (fruits[i].toLowerCase() === search.toLowerCase()) {
+    found = true;
+     alert(search + " is available at index " + i + " in our bakery.");
+     break;
+ }
+    }
+}
+if (!found) {
+    alert("We are sorry. " + (search || "Item") + " is not available in our bakery.");
+}
+                            // Question 8
+
+var A = [24, 53, 78, 91, 12];
+var largest = A[0];
+for (var i = 1; i < A.length; i++) {
+    if (A[i] > largest) {
+        largest = A[i];
+    }
+}
+console.log("The largest number is " + largest);
+
+
+                          // Question 9
+
+var A = [24, 53, 78, 91, 12];
+var smallest = A[0];
+for (var i = 1; i < A.length; i++) {
+    if (A[i] < smallest) {
+        smallest = A[i];
+    }
+}
+console.log("The smallest number is " + smallest);
+
+                            // Question 10
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 === 0) {
+        console.log(i);
+    }
+}
+
+
+</script>
+</html>
