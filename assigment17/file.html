@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+</body>
+
+<script>
+
+            // Question 1
+var firstName = prompt("Enter your first name:");
+var lastName = prompt("Enter your last name:");
+var fullName = firstName + " " + lastName;
+alert("Hello, " + fullName + "! Welcome!");
+
+            // Question 2
+var mobileModel = prompt("Enter your favorite mobile phone model:");
+var length = 0;
+
+for (var i = 0; i < mobileModel.length; i++) {
+    length++;
+}
+
+document.write("Your favorite mobile phone model is: " + mobileModel + "<br>");
+document.write("Length of your input: " + length + "<br>");
+
+            // Question 3
+var word = "Pakistani";
+var index = -1;
+
+for (var j = 0; j < word.length; j++) {
+    if (word[j] === "n") {
+        index = j;
+        break;
+    }
+}
+
+document.write("Word: " + word + "<br>");
+document.write("Index of 'n': " + index + "<br>");
+
+            // Question 4
+var string = "Hello World";
+var lastIndex = -1;
+
+for (var k = 0; k < string.length; k++) {
+    if (string[k] === "l") {
+        lastIndex = k;
+    }
+}
+
+document.write("String: " + string + "<br>");
+document.write("Last index of 'l': " + lastIndex + "<br>");
+
+            // Question 5
+var word2 = "Pakistani";
+var char = word2[3];
+
+document.write("String: " + word2 + "<br>");
+document.write("Character at 3rd index: " + char + "<br>");
+
+            // Question 6
+var first = prompt("Enter your first name:");
+var last = prompt("Enter your last name:");
+var full = first.concat(" ", last);
+alert("Hello, " + full);
+
+            // Question 7
+var city = "Hyderabad";
+var newCity = city.replace("Hyder", "Islam");
+
+document.write("City: " + city + "<br>");
+document.write("After replacement: " + newCity + "<br>");
+
+            // Question 8
+var message = "Ali and Sami are best friends. They play cricket and football together.";
+var newMessage = message.replace(/and/g, "&");
+
+document.write("Original message: " + message + "<br>");
+document.write("Updated message: " + newMessage + "<br>");
+
+            // Question 9
+var value = "472";
+var num = Number(value);
+
+document.write("Value: " + num + "<br>");
+document.write("Type: " + typeof num + "<br>");
+
+            // Question 10
+var input = prompt("Enter any text:");
+var capital = "";
+
+for (var s = 0; s < input.length; s++) {
+    capital += input[s].toUpperCase();
+}
+
+document.write("User Input: " + input + "<br>");
+document.write("Capital Letters: " + capital + "<br>");
+
+            // Question 11
+var text = prompt("Enter any text:");
+var titleCase = "";
+
+for (var t = 0; t < text.length; t++) {
+    if (t === 0) {
+        titleCase += text[t].toUpperCase();
+    } else {
+        titleCase += text[t].toLowerCase();
+    }
+}
+
+document.write("User Input: " + text + "<br>");
+document.write("Title Case: " + titleCase + "<br>");
+
+            // Question 12
+var num2 = 35.36;
+var numberString = num2.toString();
+var result = "";
+
+for (var u = 0; u < numberString.length; u++) {
+    if (numberString[u] !== ".") {
+        result += numberString[u];
+    }
+}
+
+document.write("Number: " + num2 + "<br>");
+document.write("After removing dot: " + result + "<br>");
+
+            // Question 13
+var a = prompt("Enter your name : ");
+
+if (a.indexOf("!") !== -1 || a.indexOf("@") !== -1 || a.indexOf(".") !== -1 || a.indexOf(",") !== -1) {
+    alert("Invalid username! please enter a username without @ ! . ,");
+} else {
+    alert("Welcome " + a);
+}
+
+            // Question 14
+var items = ["cake", "apple pie", "cookie", "chips", "patties"];
+var search = prompt("Welcome to ABC Bakery. What do you want to order?");
+var found = false;
+
+for (var y = 0; y < items.length; y++) {
+    if (items[y].toLowerCase() === search.toLowerCase()) {
+        found = true;
+        break;
+    }
+}
+
+if (found) {
+    alert(search + " is available in our bakery.");
+} else {
+    alert(search + " is not available in our bakery.");
+}
+
+            // Question 15
+var password = prompt("Enter password:");
+var passValid = false;
+
+while (!passValid) {
+
+    var hasLetter = false;
+    var hasNumber = false;
+
+    if (password.length < 6 || !isNaN(password[0])) {
+        password = prompt("Invalid password. Enter again:");
+        continue;
+    }
+
+    for (var z = 0; z < password.length; z++) {
+        if ((password[z] >= "a" && password[z] <= "z") || (password[z] >= "A" && password[z] <= "Z")) {
+            hasLetter = true;
+        }
+        if (password[z] >= "0" && password[z] <= "9") {
+            hasNumber = true;
+        }
+    }
+
+    if (hasLetter && hasNumber) {
+        passValid = true;
+    } else {
+        password = prompt("Invalid password. Enter again:");
+    }
+}
+
+alert("Password is valid");
+
+            // Question 16
+var university = "University of Karachi";
+var array = university.split(" ");
+
+document.write("Array Elements: <br>");
+
+for (var m = 0; m < array.length; m++) {
+    document.write(array[m] + "<br>");
+}
+
+            // Question 17
+var userWord = prompt("Enter any word:");
+var lastCharacter = userWord[userWord.length - 1];
+
+document.write("User Input: " + userWord + "<br>");
+document.write("Last Character: " + lastCharacter + "<br>");
+
+            // Question 18
+var para = "The quick brown fox jumps over the lazy dog";
+
+var matches = para.match(/\bthe\b/gi);
+var count = matches ? matches.length : 0;
+
+document.write("<br>Sentence: " + para + "<br>");
+document.write("Number of occurrences of 'the': " + count);
+
+</script>
+</html>
