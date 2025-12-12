@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+                            // chapter "1"
+    // question "1"
+    alert("Welcome to JavaScript!");
+
+    // question "2"
+    let userName = prompt("What is your name?");
+    alert("Your name is: " + userName);
+
+    // question "3"    
+    let favoriteColor = prompt("What is your favorite color?");
+    alert("Your favorite color is: " + favoriteColor);
+
+                            // chapter "2"
+    // question "1"
+    let firstName = "Rehan";
+    let lastName = "Ali";
+    alert(firstName + " " + lastName);
+
+    // question "2"
+    let city = "Karachi";
+    alert("You live in " + city);
+
+    // question "3"
+    let hobby = "Cricket";
+    alert("Your hobby is: " + hobby);
+                            // chapter "3"
+    // question "1"
+    var num1 = 25;
+    var num2 = 30;
+    var sum = num1 + num2;
+    alert("The sum is: " + sum);
+
+    // question "2"
+    var marks = 65;
+    if (marks >= 50) {
+    alert("Pass");
+    } else {
+    alert("Fail");
+    }
+
+    // question "3"
+    var age = 20;
+    if (age > 18) {
+    alert("You are above 18");
+    }
+
+                            // chapter "4"
+    // question "1"
+    var Name = "Rehan";
+    var age = 25;
+    var city1 = "Karachi";
+    alert("Legal variable names are: Name, age, city1");
+
+    // question "2"
+    alert("Illegal variable names cannot start with numbers, contain hyphens, or use reserved words");
+
+    // question "3"
+    var varsArray = ["userName", "age", "city"];
+    alert("All variable names: " + varsArray.join(", "));
+
+                                // chapter "5"
+    // question "1"
+    var number1 = 15;
+    var number2 = 7;
+    var sum = number1 + number2;
+    var difference = number1 - number2;
+    alert("Sum: " + sum + ", Difference: " + difference);
+
+    // question "2"
+    var numA = 20;
+    var numB = 4;
+    var product = numA * numB;
+    var quotient = numA / numB;
+    var remainder = numA % numB;
+    alert("Product: " + product + ", Quotient: " + quotient + ", Remainder: " + remainder);
+
+    // question "3"
+    var myNumber = 10;
+    myNumber++;
+    alert("After increment: " + myNumber);
+
+                                // chapter "6"
+    // question "1"
+    var num = 10;
+    num++;
+    alert("After increment (++): " + num);
+    num--;
+    alert("After decrement (--): " + num);
+
+    // question "2"
+    var a = 20;
+    a += 5;
+    alert("After += 5: " + a);
+    a -= 3;
+    alert("After -= 3: " + a);
+
+    // question "3"
+    var b = 8;
+    b *= 2;
+    alert("After *= 2: " + b);
+    b /= 4;
+    alert("After /= 4: " + b); 
+                                // chapter "7"
+    // question "1"
+    var x = 5;
+    var y = 10;
+    var z = 2;
+    var result1 = (x + y) * z;
+    alert("Result using parentheses: " + result1);
+
+    // question "2"
+    var a = 8;
+    var b = 3;
+    var c = 2;
+    var result2 = a + b * c - 4;
+    alert("Result combining +, *, - : " + result2);
+
+    // question "3"
+    var p = 6;
+    var q = 2;
+    var r = 3;
+    var s = 4;
+    var result3 = ((p + q) * r) - s;
+        alert("Result with multiple parentheses: " + result3);
+                                // chapter "8"
+    // question "1"
+    var fName = "Rehan";
+    var lName = "Ali";
+    var fullName = fName + " " + lName;
+    alert("Full name: " + fullName);
+
+    // question "2"
+    var userCity = "Karachi";
+    var greetMsg = "Hello! Welcome to ";
+    alert(greetMsg + userCity);
+
+    // question "3"
+    var str1 = "JavaScript ";
+    var str2 = "is ";
+    var str3 = "fun!";
+    var combinedMsg = str1 + str2 + str3;
+    alert(combinedMsg);
+                                    // chapter "9"
+    // question "1"
+    var favColor = prompt("What is your favorite color?");
+    alert("Your favorite color is: " + favColor);
+
+    // question "2"
+    var userAge = prompt("What is your age?");
+    alert("Your age is: " + userAge);
+
+    // question "3"
+    var favFruit = prompt("What is your favorite fruit?");
+    alert("Your favorite fruit is: " + favFruit);
+                                    // chapter "10"
+    // question "1"
+    var numberVal = 15;
+    if (numberVal > 10) {
+    alert("Number is greater than 10");
+    }
+
+    // question "2"
+    var studentMarks = 65;
+    if (studentMarks >= 50) {
+    alert("Pass");
+    }
+
+    // question "3"
+    var personAge = 16;
+    if (personAge < 18) {
+    alert("Minor");
+    }
+                                    // chapter "11"
+    // question "1"
+    var compNum1 = 15;
+    var compNum2 = 10;
+    alert("Is " + compNum1 + " greater than " + compNum2 + "? " + (compNum1 > compNum2));
+
+    // question "2"
+    var numA = 20;
+    var numB = 20;
+    if (numA == numB) {
+    alert("Numbers are equal");
+    } else {
+    alert("Numbers are not equal");
+    }
+
+    // question "3"
+    var value1 = 8;
+    var value2 = 12;
+    alert("Is " + value1 + " less than or equal to " + value2 + "? " + (value1 <= value2));
+                                    // chapter "12"
+    // question "1"
+    var studentScore = 85;
+    if (studentScore >= 90) {
+    alert("A");
+    } else if (studentScore >= 70) {
+    alert("B");
+    } else {
+    alert("C");
+    }
+
+    // question "2"
+    var personYears = 15;
+    if (personYears < 12) {
+    alert("Child");
+    } else if (personYears < 18) {
+    alert("Teen");
+    } else {
+    alert("Adult");
+    }
+
+    // question "3"
+    var temp = 30;
+    if (temp >= 30) {
+    alert("Hot");
+    } else if (temp >= 20) {
+    alert("Warm");
+    } else {
+    alert("Cold");
+    }
+                                    // chapter "    13"
+    // question "1"
+    var testNumber = 8;
+    if (testNumber > 0 && testNumber % 2 == 0) {
+    alert("Number is positive and even");
+    }
+
+    // question "2"
+    var examMarks = 75;
+    if (examMarks >= 50 && examMarks <= 100) {
+    alert("Valid Marks");
+    }
+
+    // question "3"
+    var checkNum = 15;
+    if (checkNum % 3 == 0 && checkNum % 5 == 0) {
+    alert("Number is divisible by 3 and 5");
+    }
+                                    // chapter "14"
+    // question "1"
+    var personAge = 20;
+    var hasID = true;
+    if (personAge >= 18 && hasID) {
+    alert("Allowed");
+    } else {
+    alert("Not Allowed");
+    }
+
+    // question "2"
+    var checkNumber = 8;
+    if (checkNumber > 0 && checkNumber % 2 == 0) {
+    alert("Number is positive and even");
+    } else if (checkNumber > 0) {
+    alert("Number is positive but odd");
+    }
+
+    // question "3"
+    var studentMarks = 55;
+    var extraCredit = true;
+    if (studentMarks >= 50 && extraCredit) {
+    alert("Pass with extra credit");
+    } else if (studentMarks >= 50) {
+    alert("Pass without extra credit");
+    }
+                                        // chapter "15"
+    // question "1"
+    var fruitsArray = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+    alert("Fruits: " + fruitsArray.join(", "));
+
+    // question "2"
+    var numbersArray = [10, 20, 30, 40, 50];
+    alert("First number: " + numbersArray[0] + ", Last number: " + numbersArray[numbersArray.length - 1]);
+
+    // question "3"
+    var colorsArray = ["Red", "Blue", "Green", "Yellow", "Purple"];
+    alert("Colors: " + colorsArray.join(", "));
+                                        // chapter "16"
+    // question "1"
+    var fruitsList = ["Apple", "Banana", "Mango"];
+    fruitsList.push("Orange");
+    alert(fruitsList);
+
+    // question "2"
+    fruitsList.pop();
+    alert(fruitsList);
+
+    // question "3"
+    fruitsList.unshift("Grapes");
+    fruitsList.shift();
+    alert(fruitsList);
+                                        // chapter "17"
+    // question "1"
+    var fruits = ["Apple", "Banana", "Mango"];
+    fruits.splice(1, 0, "Orange");
+    alert(fruits);
+
+    // question "2"
+    fruits.splice(2, 1);
+    alert(fruits);
+
+    // question "3"
+    var someFruits = fruits.slice(1, 3);
+    alert(someFruits);
+
+                                        // chapter "18"
+    // question "1"
+    for (var i = 1; i <= 5; i = i + 1) {
+    alert(i);
+    }
+
+    // question "2"
+    var fruits = ["Apple", "Banana", "Mango", "Orange"];
+    for (var j = 0; j < fruits.length; j += 1) {
+    alert(fruits[j]);
+    }
+
+    // question "3"
+    for (var k = 1; k <= 10; k = k + 1) {
+    if (k % 2 != 0) {
+        alert(k);
+    }
+    }
+                                        // chapter "19"
+    // question "1"
+    var numbers = [5, 10, -3, 8, 12];
+    for (var i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] < 0) {
+        break;
+    }
+    alert(numbers[i]);
+    }
+
+    // question "2"
+    var nums = [1, 3, 7, 8, 5];
+    var evenFlag = false;
+    for (var j = 0; j < nums.length; j += 1) {
+    if (nums[j] % 2 == 0) {
+        evenFlag = true;
+    }
+    }
+    alert(evenFlag);
+
+    // question "3"
+    var values = [10, 25, 60, 40];
+    for (var k = 0; k < values.length; k += 1) {
+    if (values[k] > 50) {
+        break;
+    }
+    alert(values[k]);
+    }
+                                        // chapter "20"
+    // question "1"
+    for (var i = 1; i <= 3; i += 1) {
+    for (var j = 1; j <= 10; j += 1) {
+        alert(i + " x " + j + " = " + (i * j));
+    }
+    }
+
+    // question "2"
+    var matrix = [[1, 2, 3],[4, 5, 6],[7, 8, 9]];
+    for (var r = 0; r < matrix.length; r += 1) {
+    for (var c = 0; c < matrix[r].length; c += 1) {
+        alert(matrix[r][c]);
+    }
+    }
+    // question "3"
+    var array1 = [1, 2, 3];
+    var array2 = [4, 5, 6];
+    for (var m = 0; m < array1.length; m += 1) {
+    for (var n = 0; n < array2.length; n += 1) {
+        alert(array1[m] + array2[n]);
+    }
+    }
+
+                                        // chapter "21"
+    // question "1"
+    var str1 = "hello world";
+    var lettersLower = "abcdefghijklmnopqrstuvwxyz";
+    var lettersUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var upperStr = "";
+    for (var i = 0; i < str1.length; i += 1) {
+    var found = false;
+    for (var j = 0; j < lettersLower.length; j += 1) {
+        if (str1[i] === lettersLower[j]) {
+            upperStr += lettersUpper[j];
+            found = true;
+            break;
+        }
+    }
+    if (!found) {
+        upperStr += str1[i];
+    }
+    }
+    alert(upperStr);
+
+    // question "2"
+    var str2 = "HELLO WORLD";
+    var lowerStr = "";
+    for (var i = 0; i < str2.length; i += 1) {
+    var found = false;
+    for (var j = 0; j < lettersUpper.length; j += 1) {
+        if (str2[i] === lettersUpper[j]) {
+            lowerStr += lettersLower[j];
+            found = true;
+            break;
+        }
+    }
+    if (!found) {
+        lowerStr += str2[i];
+    }
+    }
+    alert(lowerStr);
+
+    // question "3"
+    var str3 = "hello world";
+    var firstChar = str3[0];
+    for (var j = 0; j < lettersLower.length; j += 1) {
+    if (firstChar === lettersLower[j]) {
+        firstChar = lettersUpper[j];
+        break;
+    }
+    }
+    var capitalizedStr = firstChar + str3.slice(1);
+    alert(capitalizedStr);
+
+                                        // chapter "22"
+    // question "1"
+    var str1 = "Hello World";
+    var lengthCount = 0;
+    while (str1[lengthCount] !== undefined) {
+    lengthCount += 1;
+    }
+    alert(lengthCount);
+
+    // question "2"
+    var str2 = "Hello World";
+    var firstThree = "";
+    for (var i = 0; i < 3 && i < str2.length; i += 1) {
+    firstThree += str2[i];
+    }
+    alert(firstThree);
+
+    // question "3"
+    var str3 = "Hello World";
+    var lastThree = "";
+    var startIndex = 0;
+    while (str3[startIndex + 3] !== undefined) {
+    startIndex += 1;
+    }
+    for (var i = startIndex; i < str3.length; i += 1) {
+    lastThree += str3[i];
+    }
+    alert(lastThree);
+
+                                        // chapter "23"
+    // question "1"
+    var str1 = "I love JavaScript";
+    var word = "JavaScript";
+    var position = -1;
+    for (var i = 0; i <= str1.length - word.length; i += 1) {
+    var match = true;
+    for (var j = 0; j < word.length; j += 1) {
+        if (str1[i + j] !== word[j]) {
+            match = false;
+            break;
+        }
+    }
+    if (match) {
+        position = i;
+        break;
+    }
+    }
+    alert(position);
+
+    // question "2"
+    var str2 = "Programming";
+    var letter = "g";
+    var lastIndex = -1;
+    for (var i = 0; i < str2.length; i += 1) {
+    if (str2[i] === letter) {
+        lastIndex = i;
+    }
+    }
+    alert(lastIndex);
+
+    // question "3"
+    var str3 = "I enjoy coding";
+    var sub = "coding";
+    var exists = false;
+    for (var i = 0; i <= str3.length - sub.length; i += 1) {
+    var match = true;
+    for (var j = 0; j < sub.length; j += 1) {
+        if (str3[i + j] !== sub[j]) {
+            match = false;
+            break;
+        }
+    }
+    if (match) {
+        exists = true;
+        break;
+    }
+    }
+    alert(exists);
+
+                                        // chapter "24"
+    // question "1"
+    var str1 = "JavaScript";
+    alert(str1[2]);
+
+    // question "2"
+    var str2 = "Programming";
+    var lastChar = str2[0];
+    for (var i = 0; str2[i + 1] !== undefined; i += 1) {
+    lastChar = str2[i + 1];
+    }
+    alert(lastChar);
+
+    // question "3"
+    var str3 = "Coding";
+    var lengthCount = 0;
+    for (var i = 0; str3[i] !== undefined; i += 1) {
+    lengthCount += 1;
+    }
+    var middleIndex = Math.floor(lengthCount / 2);
+    alert(str3[middleIndex]);
+                                        // chapter "25"
+    // question "1"
+    var str1 = "I love JavaScript";
+    var oldWord = "JavaScript";
+    var newWord = "Coding";
+    var replacedStr = "";
+    for (var i = 0; i < str1.length; i += 1) {
+    var match = true;
+    for (var j = 0; j < oldWord.length; j += 1) {
+        if (str1[i + j] !== oldWord[j]) {
+            match = false;
+            break;
+        }
+    }
+    if (match) {
+        replacedStr += newWord;
+        i += oldWord.length - 1;
+    } else {
+        replacedStr += str1[i];
+    }
+    }
+    alert(replacedStr);
+
+    // question "2"
+    var str2 = "Banana";
+    var letter = "a";
+    var newLetter = "o";
+    var replacedAll = "";
+    for (var i = 0; i < str2.length; i += 1) {
+    if (str2[i] === letter) {
+        replacedAll += newLetter;
+    } else {
+        replacedAll += str2[i];
+    }
+    }
+    alert(replacedAll);
+
+    // question "3"
+    var str3 = "I love coding and coding is fun";
+    var oldWord1 = "coding";
+    var newWord1 = "JavaScript";
+    var replacedFirst = "";
+    var replacedFlag = false;
+    for (var i = 0; i < str3.length; i += 1) {
+    var match = true;
+    for (var j = 0; j < oldWord1.length; j += 1) {
+        if (str3[i + j] !== oldWord1[j]) {
+            match = false;
+            break;
+        }
+    }
+    if (match && !replacedFlag) {
+        replacedFirst += newWord1;
+        i += oldWord1.length - 1;
+        replacedFlag = true;
+    } else {
+        replacedFirst += str3[i];
+    }
+    }
+    alert(replacedFirst);
+
+
+
+</script>
+</html>
