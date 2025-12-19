@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // question 1 "A"
+    var num = parseFloat(prompt("Enter a positive number:"));
+    document.write("Number: " + num + "<br>");
+
+    // question 1 "B"
+    document.write("<br>Round off value: " + Math.round(num) + "<br>");
+
+    // question 1 "C"
+    document.write("<br>Floor value: " + Math.floor(num) + "<br>");
+
+    // question 1 "D"
+    document.write("<br>Ceil value: " + Math.ceil(num));
+
+    // question 2 "A"
+    var num = parseFloat(prompt("Enter a negative floating point number:"));
+    document.write("<br>Number: " + num + "<br>");
+
+    // question 2 "B"
+    document.write("<br>Round off value: " + Math.round(num) + "<br>");
+
+    // question 2 "C"
+    document.write("<br>Floor value: " + Math.floor(num) + "<br>");
+
+    // question 2 "D"
+    document.write("<br>Ceil value: " + Math.ceil(num));
+
+    // question 3
+    var num = -4;
+    document.write("<br>The absolute value of " + num + " is " + Math.abs(num));
+
+    // question 4
+    var dice = Math.floor(Math.random() * 6) + 1;
+    document.write("<br>Dice Value: " + dice);
+
+    // question 5
+    var coin = Math.random() < 0.5 ? "Heads" : "Tails";
+    document.write("<br>Coin Value: " + coin);
+
+    // question 6
+    var num = Math.floor(Math.random() * 100) + 1;
+    document.write("<br>Random Number: " + num);
+
+    // question 7
+    var weight = parseFloat(prompt("Enter your weight:"));
+    document.write("<br>Your weight is: " + weight + " kilograms");
+
+    // question 8
+    var secretNumber = Math.floor(Math.random() * 10) + 1;
+    var userGuess = parseInt(prompt("Guess the secret number (1-10):"));
+    if (userGuess === secretNumber) {
+        alert("Congratulations! You guessed the secret number");
+    } else {
+        alert("Try again");
+    }
+
+
+                        // seconf pdf
+    
+    
+    // question 1
+    var currentDate = new Date();
+    document.write("Current Date and Time: " + currentDate);
+
+    // question 2
+    var months = ["January", "February", "March", "April", "May", "June","July", "August", "September",
+    "October", "November", "December"];
+    var currentMonthIndex = new Date().getMonth();
+    var currentMonth = months[currentMonthIndex];
+    alert(currentMonth);
+
+    // question 3
+    var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var currentDayIndex = new Date().getDay();
+    var currentDay = days[currentDayIndex];
+    alert(currentDay);
+
+    // question 4
+    var today = new Date().getDay();
+    if (today === 0 || today === 6) {
+     document.write("<br>It's Fun day");
+    }
+
+    // question 5
+    var todayDate = new Date().getDate();
+    if (todayDate < 16) {
+    document.write("<br>First fifteen days of the month");
+    } else {
+    document.write("<br>Last days of the month");
+        }
+
+    // question 6
+    currentDate = new Date();
+    var millisecondsSince1970 = currentDate.getTime();
+    var minutesSince1970 = millisecondsSince1970 / (1000 * 60);
+    document.write("<br>Current Date: " + currentDate);
+    document.write("<br>Elapsed milliseconds since January 1, 1970: " + millisecondsSince1970);
+    document.write("<br>Elapsed minutes since January 1, 1970: " + minutesSince1970);
+
+    // Question 7
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    if (hours < 12) {
+        alert("Its AM");
+    } else {
+        alert("Its PM");
+    }
+
+    // Question 8
+    var laterDate = new Date(2020, 11, 31);
+    document.write("<br>Later date: " + laterDate);
+
+    // Question 9
+    var ramadanDate = new Date("June 18, 2015");
+    var today = new Date();
+    var diffInMs = today - ramadanDate;
+    var daysPassed = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+    document.write("<br>" + daysPassed + " days have passed since 1st Ramadan, 2015");
+
+    // Question 10
+    var referenceDate = new Date("Dec 05, 2015 22:50:16");
+    var beginning2015 = new Date("Jan 01, 2015");
+    var diffInSeconds = (referenceDate - beginning2015) / 1000;
+    document.write("<br>On reference date " + referenceDate + ",");
+    document.write("<br>" + diffInSeconds + " seconds had passed since beginning of 2015");
+
+    // Question 11
+    var currentDate = new Date();
+    document.write("<br>Current date: " + currentDate);
+    currentDate.setHours(currentDate.getHours() + 1);
+    document.write("<br>1 hour ahead, it will be " + currentDate);
+
+    // Question 12
+    var date = new Date();
+    date.setFullYear(date.getFullYear() - 100);
+    alert(date);
+
+    // Question 13
+    var age = prompt("Enter your age:");
+    var currentYear = new Date().getFullYear();
+    var birthYear = currentYear - age;
+    document.write("<br>Your age is " + age);
+    document.write("<br>Your birth year is " + birthYear);
+
+    // Question 14
+    var name = "ABC Customer";
+    var month = "February";
+    var units = 410;
+    var rate = 16;
+    var sur = 350;
+    var net = units * rate;
+    var gross = net + sur;
+    document.write("<h1>K-Electric Bill</h1>");
+    document.write("Customer Name: <b>" + name + "</b><br>");
+    document.write("Month: <b>" + month + "</b><br>");
+    document.write("Number of units: <b>" + units + "</b><br>");
+    document.write("Charges per unit: <b>" + rate.toFixed(2) + "</b><br><br>");
+    document.write("Net Amount Payable (within Due Date): <b>" + net.toFixed(2) + "</b><br>");
+    document.write("Late payment surcharge: <b>" + sur.toFixed(2) + "</b><br>");
+    document.write("Gross Amount Payable (after Due Date): <b>" + gross.toFixed(2) + "</b>");
+</script>
+</html>
