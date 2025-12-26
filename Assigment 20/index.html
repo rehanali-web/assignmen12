@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 20</title>
+</head>
+<body>
+    
+</body>
+<script>
+                        // Question 1
+
+    function run (){
+        var x = new Date();
+        document.write(x);
+    }
+    run();
+
+                        // Question 2
+
+    var firstName = prompt("Enter your first name:");
+    var lastName = prompt("Enter your last name:");
+    function greetUser() {
+    var fullName = firstName + " " + lastName;
+    console.log("Hello " + fullName);
+    }
+    greetUser();
+
+                        // Question 3
+
+    var num1 = Number(prompt("Enter first number:"));
+    var num2 = Number(prompt("Enter second number:"));
+    function addNumbers() {
+        return num1 + num2;
+    }
+    var sum = addNumbers();
+    console.log("Sum:", sum);
+
+                        // Question 4
+
+    function calculator(num1, num2, operator) {
+        if (operator == "+") {
+        return num1 + num2;
+        } else if (operator == "-") {
+        return num1 - num2;
+        } else if (operator == "*") {
+        return num1 * num2;
+        } else if (operator == "/") {
+        return num1 / num2;
+        } else {
+        return "Invalid operator";
+        }
+    }
+    var number1 = Number(prompt("Enter first number:"));
+    var number2 = Number(prompt("Enter second number:"));
+    var op = prompt("Enter operator (+, -, *, /):");
+    var result = calculator(number1, number2, op);
+    alert("Result: " + result);
+
+                        // Question 5
+    
+    function square(number) {
+        return number * number;
+    }
+    var num = Number(prompt("Enter a number:"));
+    alert("Square: " + square(num));
+
+                        // Question 6
+
+    function run() {
+    var num = Number(prompt("Enter a number:"));
+    var result = 1;
+        for (var i = 1; i <= num; i++) {
+        result = result * i;
+    }
+    console.log("Factorial: " + result);
+    }
+    run();
+
+                        // Question 7
+
+    var startNum = Number(prompt("Enter start number:"));
+    var endNum = Number(prompt("Enter end number:"));
+    function count() {
+    for (var i = startNum; i <= endNum; i++) {
+        console.log(i);
+    }
+    }
+    count();
+    
+                        // Question 8
+
+    function calculateHypotenuse(base, perpendicular) {
+
+    var baseSquare;
+    var perpendicularSquare;
+    var hypotenuse;
+
+    function calculateSquare(value) {
+        return value * value;
+    }
+    baseSquare = calculateSquare(base);
+    perpendicularSquare = calculateSquare(perpendicular);
+
+    hypotenuse = Math.sqrt(baseSquare + perpendicularSquare);
+        return hypotenuse;
+    }
+    var result = calculateHypotenuse(3, 4);
+    console.log("Hypotenuse:", result);
+
+                        // Question 9
+    
+    function calculateArea(width, height) {
+    var area;
+    area = width * height;
+    return area;
+    }
+    var result1 = calculateArea(10, 5);
+    console.log("Area (values):", result1);
+
+                        // Question 10
+
+    function pal(str) {
+    var i;
+    for (i = 0; i < str.length / 2; i++) {
+        if (str[i] !== str[str.length - 1 - i]) {
+            return "Not Palindrome";
+        }
+    }
+        return "Palindrome";
+    }
+    var result = pal("level");
+    console.log(result);
+
+                        // Question 11
+
+    function cap(str) {
+    var words = str.split(" ");
+    var i;
+
+    for (i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+    }
+
+        return words.join(" ");
+    }
+    var result = cap("the quick brown fox");
+    // console.log(result);
+
+    //                     // Question 12
+
+
+    function lw(str) {
+    var words = str.split(" ");
+    var max = words[0];
+    var i;
+
+    for (i = 1; i < words.length; i++) {
+        if (words[i].length > max.length) {
+            max = words[i];
+        }
+    }
+        return max;
+    }
+    var result = lw("Web Development Tutorial");
+    console.log(result);
+
+    //                     // Question 13
+
+    function Letter(str, letter) {
+    var count = 0;
+    var i;
+
+    for (i = 0; i < str.length; i++) {
+        if (str[i] === letter) {
+            count++;
+        }
+    }
+
+        return count;
+    }
+
+    var result = Letter("JSResourceS.com", "o");
+    console.log(result); 
+
+
+    //                     // Question 14
+
+
+    function calcCirc(r) {
+    var circumference = 2 * Math.PI * r;
+    console.log("The circumference is " + circumference);
+    }
+    function calcArea(r) {
+    var area = Math.PI * r * r;
+    console.log("The area is " + area);
+    }
+    var radius = 5;
+    calcCirc(radius);
+    calcArea(radius);
+
+
+</script>
+</html>
