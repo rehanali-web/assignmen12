@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practice</title>
+</head>
+
+<body>
+
+<a href="javascript:void(0)" onclick="showAlert()">Link</a>
+
+<hr>
+
+<table>
+    <tr>
+        <td>
+            <img src="img/image.png" width="120" onclick="buyMobile(0)"><br>
+        </td>
+        <td>
+            <img src="img/image copy 3.png" width="120" onclick="buyMobile(2)"><br>
+        </td>
+        <td>
+            <img src="img/image copy.png" width="120" onclick="buyMobile(2)"><br>
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<table border="1">
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th></th>
+    </tr>
+
+    <tr>
+        <td>0</td>
+        <td>Rehan</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Ali</td>
+        <td>9</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Mark</td>
+        <td>8</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+</table>
+
+<hr>
+
+<img src="img/image copy 4.png" width="200"
+     onmouseover="changeImage(this)"
+     onmouseout="resetImage(this)">
+
+
+<hr>
+
+<button onclick="decrease()">Decrease</button>
+<span id="counter">0</span>
+<button onclick="increase()">Increase</button>
+</body>
+    <script src="app.js"></script>
+</html>
